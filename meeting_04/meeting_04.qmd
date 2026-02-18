@@ -1,0 +1,63 @@
+---
+title: "Meeting 04"
+format:
+    html:
+        toc: true
+        toc-depth: 3
+        code-fold: true
+        link-external-newwindow: true
+        code-overflow: wrap
+        code-copy: true
+# pdf output disabled
+
+date: "2026-02-18"
+date-modified: "2026-02-18"
+author: "Kwok-leong Tang"
+---
+
+# The importance of building “Big Tables”
+
+I met with some of you about your research projects, and I noticed some confusion about how to start a new research topic. From my perspective, building “big tables” is always the first step.
+
+These big tables include:
+
+- primary sources
+- related scholarship
+- other relevant materials
+
+# Introduction of Today’s Task
+
+There are two PDF files in the `pdf/` folder. They are extracted pages from Wolfgang Frank’s famous book *Introduction of Ming sources* (see a newer edition on WorldCat: [https://search.worldcat.org/title/779242963](https://search.worldcat.org/title/779242963)). **For this class, we are using an edition published in the 1960s.**
+
+- `pdf/wf_abbreviations.pdf` is the abbreviations list.
+- `pdf/wf_five_pages.pdf` contains five pages from the first chapter.
+
+Your tasks:
+
+1. Extract the abbreviations and their meanings from the list into a table.
+2. Turn the abbreviations in the content into clickable links.
+
+# Google NotebookLM
+
+Landing page: [https://notebooklm.google/](https://notebooklm.google/)
+
+# OCR tool for Apple
+
+The software is called `glm-ocr-mlx`. It is provided as `ocr_software/glm-ocr-mlx-main.zip`. Download the file and unzip it, then read the `README.md` file for instructions on how to use it.
+
+Currently, it only works on Apple Silicon computers. If you have a Windows/Linux/Intel Mac, you can use the OCR tool for LM Studio/Ollama, which we will introduce in the next section.
+
+:::{.callout-important}
+Why do we need JSON files for OCR output?
+:::
+
+# OCR tool for LM Studio/Ollama
+
+Repository: [https://github.com/kltng/ocr_batch_processor](https://github.com/kltng/ocr_batch_processor)
+
+Ollama: [https://ollama.com/](https://ollama.com/)
+
+# Use Openwork or chatbots to clean the OCR output and turn them into clickable links.
+
+If you cannot get OCR output, you can use the JSON files in the `ocr_results/` folder. They are the output of `glm-ocr-mlx`. You can use Openwork or chatbots to clean the OCR output and extract the abbreviations and their meanings into a table.
+
